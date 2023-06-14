@@ -113,26 +113,28 @@ Automated findings output for the audit can be found [here](add link to report) 
 
 ## Scoping Details 
 ```
-- If you have a public code repo, please share it here:  
-- How many contracts are in scope?:   
-- Total SLoC for these contracts?:  
-- How many external imports are there?:  
-- How many separate interfaces and struct definitions are there for the contracts within scope?:  
-- Does most of your code generally use composition or inheritance?:   
-- How many external calls?:   
-- What is the overall line coverage percentage provided by your tests?:  
-- Is there a need to understand a separate part of the codebase / get context in order to audit this part of the protocol?:   
-- Please describe required context:   
-- Does it use an oracle?:  
-- Does the token conform to the ERC20 standard?:  
-- Are there any novel or unique curve logic or mathematical models?: 
+- If you have a public code repo, please share it here:  https://github.com/Canto-Network/Canto
+- How many contracts are in scope?:   0
+- Total SLoC for these contracts?:  349
+- How many external imports are there?: 3  
+- How many separate interfaces and struct definitions are there for the contracts within scope?:  0
+- Does most of your code generally use composition or inheritance?:   Composition
+- How many external calls?:   0
+- What is the overall line coverage percentage provided by your tests?:  100
+- Is there a need to understand a separate part of the codebase / get context in order to audit this part of the protocol?: true  
+- Please describe required context:   This audit is for a Cosmos SDK module. Therefore, understanding of how Cosmos SDK blockchains work is required.
+- Does it use an oracle?:  No
+- Does the token conform to the ERC20 standard?:  true
+- Are there any novel or unique curve logic or mathematical models?: No
 - Does it use a timelock function?:  
 - Is it an NFT?: 
-- Does it have an AMM?:   
-- Is it a fork of a popular project?:   
+- Does it have an AMM?: true   
+- Is it a fork of a popular project?:   false
 - Does it use rollups?:   
 - Is it multi-chain?:  
-- Does it use a side-chain?: 
+- Does it use a side-chain?: false
+- Describe any specific areas you would like addressed.: Our module involves IBC transfers and an AMM. We would like wardens to focus on these aspects.
+- Is this fresh code or have they been audited, if so by who?: Fresh code
 ```
 
 # Tests
