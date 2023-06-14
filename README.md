@@ -62,7 +62,7 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 
 ---
 
-# Sponsorname audit details
+# Canto audit details
 - Total Prize Pool: XXX XXX USDC (Notion: Total award pool)
   - HM awards: XXX XXX USDC (Notion: HM (main) pool)
   - Analysis awards: XXX XXX USDC (Notion: Analysis pool)
