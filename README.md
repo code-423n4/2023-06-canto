@@ -232,12 +232,10 @@ Each module implements their own custom logic in the packet callback `OnRecvPack
 
 | Contract | SLOC | Purpose | Modules used |  
 | ----------- | ----------- | ----------- | ----------- |
-| [x/onboarding](add-link) | --- | Contains logic for onboarding middleware | [`x/coinswap`](add-link) |
-| [x/onboarding/keeper/ibc_callbacks.go](add-link) | 55 | Contains core logic | [`x/coinswap`](add-link) |
-| [x/onboarding/types/params.go](add-link) | 47 | Contains params for onboarding module | [`x/coinswap`](add-link) |
-| [x/coinswap](add-link) | --- | Contains dex logic |  |
-| [x/coinswap/pool.go](add-link) | 85 | Contains logic for dex pools |  |
-| [x/coinswap/swap.go](add-link) | 102 | Contains logic for dex swaps |  |
+| [x/onboarding/keeper/ibc_callbacks.go](https://github.com/code-423n4/2023-06-canto/tree/main/Canto/x/onboarding/keeper/ibc_callbacks.go) | 55 | Contains core logic | [`x/coinswap`](https://github.com/code-423n4/2023-06-canto/tree/main/Canto/x/coinswap) |
+| [x/onboarding/types/params.go](https://github.com/code-423n4/2023-06-canto/tree/main/Canto/x/onboarding/types/params.go) | 47 | Contains params for onboarding module | [`x/coinswap`](https://github.com/code-423n4/2023-06-canto/tree/main/Canto/x/coinswap) |
+| [x/coinswap/keeper/pool.go](https://github.com/code-423n4/2023-06-canto/tree/main/Canto/x/coinswap/keeper/pool.go) | 85 | Contains logic for dex pools |  |
+| [x/coinswap/keeper/swap.go](https://github.com/code-423n4/2023-06-canto/tree/main/Canto/x/coinswap/keeper/swap.go) | 102 | Contains logic for dex swaps |  |
 
 ## Out of scope
 
@@ -270,7 +268,7 @@ Each module implements their own custom logic in the packet callback `OnRecvPack
 ```
 
 # Tests
-### Testing Onboarding Middelware
+### Testing Onboarding Middleware
 ```bash
 cd Canto/x/onboarding
 go test ./...
