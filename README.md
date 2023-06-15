@@ -1,9 +1,8 @@
 # Canto audit details
 - Total Prize Pool: $36,500 (Awards in your choice of USDC or CANTO)
-  - HM awards: $25,500 
+  - HM awards: $27,750 
   - Analysis awards: $1,500 
   - QA awards: $750 
-  - Bot Race awards: $2,250 
   - Gas awards: $0 
   - Judge awards: $3,600 
   - Lookout awards: $2,400
