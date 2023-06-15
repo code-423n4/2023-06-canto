@@ -78,17 +78,9 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
 - Starts June 20, 2023 20:00 UTC 
 - Ends June 23, 2023 20:00 UTC 
 
-## Automated Findings / Publicly Known Issues
-
-Automated findings output for the audit can be found [here](add link to report) within 24 hours of audit opening.
-
-*Note for C4 wardens: Anything included in the automated findings output is considered a publicly known issue and is ineligible for awards.*
-
-[ ⭐️ SPONSORS ADD INFO HERE ]
-
 # Overview of Onboarding Middleware
 
-The x/onboarding module implements IBC middleware for users who don’t have Canto tokens for initial gas spending. Additionally, this module will also convert IBC assets to their ERC20 equivalent if the mapping is already registered.
+The `x/onboarding` module implements IBC middleware for users who don’t have Canto tokens for initial gas spending. Additionally, this module will also convert IBC assets to their ERC20 equivalent if the mapping is already registered using the `x/coinswap` module.
 
 ## Background Information
 Canto is a layer-1 EVM built using Cosmos SDK. As such, IBC assets do not exist on the EVM unless an IBC <-> ERC20 mapping is registered. Once the mapping is created, users are able to convert between ERC20s (to use on the EVM) and IBC assets (to IBC elsewhere).  
@@ -305,7 +297,9 @@ Each module implements their own custom logic in the packet callback `OnRecvPack
 | Contract | SLOC | Purpose | Modules used |  
 | ----------- | ----------- | ----------- | ----------- |
 | [x/onboarding](add-link) | --- | Contains logic for onboarding middleware | [`x/coinswap`](add-link) |
-| [x/onboarding/ibc_callbacks.go](add-link) | 55 | Contains core logic | [`x/coinswap`](add-link) |
+| [x/onboarding/keeper/ibc_callbacks.go](add-link) | 55 | Contains core logic | [`x/coinswap`](add-link) |
+| [x/onboarding/types/params.go](add-link) | 47 | Contains params for onboarding module | [`x/coinswap`](add-link) |
+| [x/coinswap](add-link) | --- | Contains dex logic |  |
 | [x/coinswap/pool.go](add-link) | 85 | Contains logic for dex pools |  |
 | [x/coinswap/swap.go](add-link) | 102 | Contains logic for dex swaps |  |
 
