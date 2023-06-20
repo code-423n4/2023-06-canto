@@ -13,6 +13,8 @@
 - Starts June 20, 2023 20:00 UTC 
 - Ends June 23, 2023 20:00 UTC 
 
+❗️Awarding Note for Wardens, Judges, and Lookouts: If you want to claim your awards in $ worth of CANTO, you must follow the steps outlined in this [thread](https://discord.com/channels/810916927919620096/1120698367287234642); otherwise you'll be paid out in USDC.
+
 # Overview of Onboarding Middleware
 
 The `x/onboarding` module implements IBC middleware for users who don’t have Canto tokens for initial gas spending. Additionally, this module will also convert IBC assets to their ERC20 equivalent if the mapping is already registered using the `x/coinswap` module.
